@@ -5,11 +5,12 @@ You may adjust configuration in the program.
 Originally write to cooperate with a bot to provide server info.
 
 ## Requirement
-python(>=3.6.0) aiohttp traceroute(pip3 install aiohttp && yum install traceroute -y)
+python(>=3.6.0) aiohttp <br>
+Additional for traceroute: linux system package traceroute
 ## API-Usage:
-We recommend you to run this api with screen,because it's a listener,but it can't be daemon.<br>
-When you have already run the program,Press Ctrl+A Ctrl+D to quit.the program will continue running.<br>
-When the program running,access http://yourIP:yourport/key/?apitype&parameter1=xxx&parameter2=xxx<br><br>
+We recommend you to run this api with screen, because it's a listener, but not a daemon itself.<br>
+After the program successfully initalized, Press Ctrl+A Ctrl+D to quit. the program will continue running.<br>
+While the program is running, access http://yourIP:yourport/key/?apitype&parameter1=xxx&parameter2=xxx to use its api.<br><br>
 ### Parameter Explain
 #### yourport:
 which you selected listen port,default is 4096.when both ipv4 and ipv6 available,it will listen at both ipv4 and ipv6.<br>
@@ -39,9 +40,10 @@ Default IP format is 123:45:67:89,because like the xxx.xxx.xxx.xxx will be shown
 你可以任意调整该程序的参数，其中KEY是必须调整的。
 
 ## 依赖
-python(>=3.6.0) aiohttp(pip3 install aiohttp && yum install traceroute -y)
+python(>=3.6.0) aiohttp<br>
+traceroute 额外依赖: linux 系统包 traceroute
 ## API用法:
-我们强烈推荐您使用screen，在screen里执行。待Init完毕之后，按Ctrl+A Ctrl+D退出，此时API仍然会正常继续运行。<br>
+我们强烈推荐您使用screen，在screen里执行。本程序没有自我保活功能。待Init完毕之后，按Ctrl+A Ctrl+D退出，此时API仍然会正常继续运行。<br>
 当程序正常运行并且对应的端口防火墙已经开放时，访问http://你的IP地址:你设定的端口号/api密钥（KEY）/?api类型&参数1=xxx&参数2=xxx<br><br>
 ### 参数解释
 #### 你设定的端口号:
