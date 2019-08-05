@@ -10,7 +10,7 @@ Additional for traceroute: linux system package traceroute
 ## API-Usage:
 We recommend you to run this api with screen, because it's a listener, but not a daemon itself.<br>
 After the program successfully initalized, Press Ctrl+A Ctrl+D to quit. the program will continue running.<br>
-While the program is running, access http://yourIP:yourport/key/?apitype&parameter1=xxx&parameter2=xxx to use its api.<br><br>
+While the program is running, access http://yourIP:yourport/key/apitype?parameter1=xxx&parameter2=xxx to use its api.<br><br>
 ### Parameter Explain
 #### yourport:
 which you selected listen port,default is 4096.when both ipv4 and ipv6 available,it will listen at both ipv4 and ipv6.<br>
@@ -44,7 +44,7 @@ python(>=3.6.0) aiohttp<br>
 traceroute 额外依赖: linux 系统包 traceroute
 ## API用法:
 我们强烈推荐您使用screen，在screen里执行。本程序没有自我保活功能。待Init完毕之后，按Ctrl+A Ctrl+D退出，此时API仍然会正常继续运行。<br>
-当程序正常运行并且对应的端口防火墙已经开放时，访问http://你的IP地址:你设定的端口号/api密钥（KEY）/?api类型&参数1=xxx&参数2=xxx<br><br>
+当程序正常运行并且对应的端口防火墙已经开放时，访问http://你的IP地址:你设定的端口号/api密钥（KEY）/api类型?参数1=xxx&参数2=xxx<br><br>
 ### 参数解释
 #### 你设定的端口号:
 该端口号指的是你将在你的IP地址的哪个端口运行该API，默认值是4096.当IPV6可用时，程序将会同时监听IPV4与IPV6。<br>
